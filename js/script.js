@@ -108,12 +108,12 @@ $(document).ready(function() {
             }
         });
         
-        // Show popup after 30 seconds
+        // Show popup after 10 seconds
         setTimeout(function() {
             if (!popupShown) {
                 showExitPopup();
             }
-        }, 30000);
+        }, 10000);
     }
     
     function showExitPopup() {
