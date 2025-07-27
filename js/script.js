@@ -51,24 +51,28 @@ $(document).ready(function() {
     const featuresCarousel = new Swiper('.features-carousel', {
         slidesPerView: 4,
         spaceBetween: 30,
-        loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
+        loop: false,
+        navigation: {
+            nextEl: '.features-carousel-next',
+            prevEl: '.features-carousel-prev',
         },
         breakpoints: {
             960: {
                 slidesPerView: 4,
+                spaceBetween: 30,
             },
             767: {
                 slidesPerView: 3,
+                spaceBetween: 20,
             },
             599: {
                 slidesPerView: 2,
+                spaceBetween: 15,
             },
             0: {
-                slidesPerView: 1,
-                centeredSlides: true,
+                slidesPerView: 1.2,
+                spaceBetween: 10,
+                centeredSlides: false,
             }
         }
     });
